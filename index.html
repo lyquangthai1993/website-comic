@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mực & Khung — truyện tranh Việt chọn lọc cho những người thích đọc chậm và nhớ lâu." />
+  <title>Mực & Khung — Truyện tranh có dư âm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topline">Đọc một chương. Giữ lại một thế giới. <span>Miễn phí giao hàng từ 350.000đ</span></div>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Mực và Khung về đầu trang"><span>MỰC</span><i>&</i><span>KHUNG</span></a>
+    <nav class="main-nav" aria-label="Điều hướng chính"><a href="#collection">Bộ sưu tập</a><a href="#about">Về chúng tôi</a></nav>
+    <button class="cart-trigger" id="cartTrigger" aria-label="Mở giỏ hàng">Giỏ hàng <b id="cartCount">0</b></button>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Nhà xuất bản truyện tranh độc lập <span>✳</span></p>
+        <h1>Những câu chuyện<br><em>có dư âm.</em></h1>
+        <p class="hero-text">Từ những con hẻm quen đến các thiên hà rất xa, chúng tôi tìm những trang truyện khiến bạn muốn đọc lại ngay từ trang cuối.</p>
+        <a class="button button-dark" href="#collection">Khám phá bộ sưu tập <span>↘</span></a>
+        <div class="hero-note"><span class="scribble">✹</span><span>Truyện mới mỗi tháng<br><strong>Chọn lọc từ tác giả Việt</strong></span></div>
+      </div>
+      <div class="hero-art" aria-label="Bìa truyện Mùa Hè Trong Hộp Diêm">
+        <div class="burst">MỚI<br>RA MẮT</div><div class="cover-shadow"></div><div class="cover cover-featured"><small>MỰC & KHUNG / 012</small><div><span>MÙA HÈ</span><strong>TRONG<br>HỘP DIÊM</strong></div><footer>một truyện dài của<br><b>Phan Thảo Nguyên</b></footer></div>
+        <div class="art-caption">01 / 06 <span>Chạm để mở</span></div>
+      </div>
+    </section>
+
+    <section class="collection shell" id="collection">
+      <div class="section-heading"><div><p class="eyebrow">Cửa hàng / 06 tựa truyện</p><h2>Đọc gì hôm nay?</h2></div><div class="filters" role="group" aria-label="Lọc theo thể loại"><button class="filter active" data-filter="Tất cả">Tất cả</button><button class="filter" data-filter="Phiêu lưu">Phiêu lưu</button><button class="filter" data-filter="Tâm lý">Tâm lý</button><button class="filter" data-filter="Hài hước">Hài hước</button></div></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="manifesto" id="about"><div class="shell manifesto-inner"><p class="eyebrow">Tại sao là Mực & Khung?</p><h2>Không chỉ là<br><em>một cuốn truyện.</em></h2><p>Chúng tôi tin một trang giấy đẹp có thể làm một ngày bình thường trở nên khác đi. Mỗi tựa truyện được in số lượng vừa đủ, đóng gói bằng tay và gửi đi từ một xưởng nhỏ ở Sài Gòn.</p><a href="#newsletter" class="text-link">Nhận thư từ xưởng in <span>↗</span></a></div><div class="manifesto-stamp">ĐỌC<br>CHẬM<br>NHỚ<br>LÂU</div></section>
+
+    <section class="testimonial shell"><div class="quote-mark">“</div><blockquote>Đọc xong mà cứ thấy thành phố ngoài kia vẽ bằng mực nước, còn mình thì đang đi trong một khung truyện chưa có ô thoại.</blockquote><p>— Minh Anh, độc giả tháng 07</p></section>
+    <section class="newsletter shell" id="newsletter"><div><p class="eyebrow">Thư từ trang giấy</p><h2>Mỗi tháng một<br><em>điều đáng đọc.</em></h2></div><form id="newsletterForm"><label for="email">Email của bạn</label><div class="email-row"><input id="email" name="email" type="email" placeholder="ban@example.com" required /><button class="button button-red" type="submit">Đăng ký <span>↗</span></button></div><p id="formMessage" class="form-message" role="status"></p></form></section>
+  </main>
+  <footer class="footer shell"><a class="logo" href="#top"><span>MỰC</span><i>&</i><span>KHUNG</span></a><p>© 2024 Mực & Khung. In bằng tình yêu.</p><div><a href="#collection">Instagram</a><a href="#about">Liên hệ</a></div></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Giỏ hàng" aria-hidden="true"><div class="cart-head"><h2>Giỏ của bạn <span id="cartTitleCount">(0)</span></h2><button id="closeCart" class="icon-button" aria-label="Đóng giỏ hàng">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-foot"><div><span>Tạm tính</span><strong id="cartTotal">0đ</strong></div><button id="checkout" class="button button-dark full">Tiến hành đặt hàng <span>↗</span></button><small>Demo — chưa kết nối thanh toán thật.</small></div></aside><div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
