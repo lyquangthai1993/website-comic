@@ -1,0 +1,24 @@
+/* Baloo 2 brings the playful comic shape; Be Vietnam Pro keeps Vietnamese diacritics crisp. */
+body,
+button,
+input { font-family: 'Be Vietnam Pro', sans-serif; }
+
+.logo,
+.hero h1,
+.manifesto h2,
+.newsletter h2,
+.section-heading h2,
+.product-meta h3,
+.cover strong,
+.product-cover h3,
+.cart-head h2,
+.manifesto-stamp { font-family: 'Baloo 2', sans-serif; }
+
+.hero h1,
+.manifesto h2,
+.newsletter h2 { font-weight: 800; line-height: .9; }
+
+.cover strong,
+.product-cover h3,
+.cart-head h2,
+.manifesto-stamp { font-weight: 700; }
